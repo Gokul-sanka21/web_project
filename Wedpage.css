@@ -50,6 +50,7 @@ body {
   box-shadow:0px 0px 2px 2px rgb(193, 193, 202);
   margin-bottom: 10px;
   margin-top: 20px;
+  font-size: medium;
 }
 hr {
   color: transparent;
