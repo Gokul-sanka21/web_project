@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Wedpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="div_1" align="center">
-        <div class="div_2">
-        <h3>Skills</h3>
-        <div class="div_2_list">
-        <ul>
-            <li>C PROGRAMMING</li>
-            <li>JAVA</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>REACT JS</li>
-        </ul>
-        </div>
-        <div class="div_2_h2">
-        <h3>Education</h3>
-        <ul class="div_2_list">
-            <li>SSLC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;91%</li>
-            <li>HSC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;85%</li>
-            <li>College&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;86%</li>
-        </ul>
-        </div>
-        </div>
-        <div class="div_3" align="center">
-            <img src="IMG_20220827_062941_051.jpg" alt="Photo" width="110px" height="120px"></br>
-            <h3>Personal Details</h3>
-            <p>NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;Gokulsankar S S<br>
-            DOB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;21st December 2002<br>
-        DEGREE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;Bachelor of Engineering<br>BRANCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;Electronics & Instrumentation<br>
-        INTEREST&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Web Development<br>NATIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;Erode , Tamilnadu
-    </p>
-        </div>
-        <footer><h3>For Contact</h3>
-        <p><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Instagram</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Email</a></p></footer>
-    </div>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock..Paper..Scissor</title>
+    <style>
+      body {
+        background-color: blue;
+        color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var sum1 = 0;
+      var sum2 = 0;
+      var player_1;
+      var player_2; 
+      function details(){
+      var player_1 = prompt("Enter your player1 name :");
+      var player_2 = prompt("Enter your player2 name :");
+      }
+      details();
+      do {
+        execute();
+        ch = prompt("Press Y to continue");
+      } while (ch == "Y");
+
+      function execute() {
+        var a1, a2, choice;
+        while (choice != 0) {
+          a1 = prompt(
+            "Enter 1 to choose rock,2 to choose paper,3 to choose scissor :"
+          );
+          a2 = prompt(
+            "Enter 1 to choose rock,2 to choose paper,3 to choose scissor :"
+          );
+          /*1.Rock
+          2.Paper
+          3.Scissor
+        */
+          if (a1 == a2) {
+            sum1++;
+            sum2++;
+          } else if (
+            (a1 == 1 && a2 == 3) ||
+            (a1 == 3 && a2 == 2) ||
+            (a1 == 2 && a2 == 1)
+          ) {
+            sum1++;
+          } else if (
+            (a2 == 1 && a1 == 3) ||
+            (a2 == 3 && a1 == 2) ||
+            (a2 == 2 && a1 == 1)
+          ) {
+            sum2++;
+          }
+          choice = prompt("press 0 to quit :");
+        }
+        document.write( "</br> scores : " + sum1);
+        document.write("</br> scores : " + sum2);
+      }
+    </script>
+  </body>
 </html>
