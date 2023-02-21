@@ -1,0 +1,82 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height:100vh;
+}
+.navigation{
+    display:flex;
+    align-items: center;
+    padding:25px;
+    justify-content: space-between;
+}
+img{
+    width:100px;
+    height:100px;
+    border:1px solid rgb(237, 180, 35);
+    border-radius: 70px; 
+}
+a{
+    text-decoration: none;
+    color:rgb(251, 220, 19);
+    margin-left: 50px;
+    font-size:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight:30px;
+}
+a:hover{
+    color:rgb(5, 5, 5);
+}
+.heading{
+    font-size: 30px;
+    margin-left:30px;
+    text-align: center;
+}
+hr{
+    width:1200px;
+    margin:30px;
+}
+.payment{
+    display:flex;
+}
+.left img{
+    width:300px;
+    height:480px;
+    margin-left:50px;
+    border-radius: 10px;
+}
+.right{
+    display:flex;
+    flex-direction: column;
+    margin-left:600px;
+}
+.right a{
+    margin-left: 50px;
+}
+input{
+    margin-top:30px;
+    height:40px;
+    width:300px;
+    border-radius: 10px;
+    padding:15px;
+    font-size: 15px;
+    border:2px solid black;
+
+
+}
+.order{
+        background-color:black;
+        color:rgba(237,180,35);
+        padding:10px;
+        margin-left:15px;
+        width:180px;
+        border-radius: 20px;
+        padding-left: 15px;
+        margin-top: 40px;
+
+
+    }
